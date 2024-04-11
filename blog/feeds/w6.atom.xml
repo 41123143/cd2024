@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41123143協同產品設計實習 - w6</title><link href="./" rel="alternate"></link><link href="./feeds/w6.atom.xml" rel="self"></link><id>./</id><updated>2024-04-11T13:33:38+08:00</updated><entry><title>W6課程內容</title><link href="./41123143_w6.html" rel="alternate"></link><published>2024-03-29T11:00:00+08:00</published><updated>2024-04-11T13:33:38+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-03-29:./41123143_w6.html</id><summary type="html">&lt;p&gt;第六週做網誌的統整、 Github Actions 帶有子模組的 main.yml 設定&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;第六週做網誌的統整、 Github Actions 帶有子模組的 main.yml 設定&lt;/p&gt;
+
+
+&lt;p&gt;1.Github Actions 帶有子模組的 main.yml 設定&lt;/p&gt;
+&lt;p&gt;2.把每個人的網誌整合到分組倉儲內, 整合前先把每個人子模組所連到的倉儲更新到現在狀態, 再利用 pelicanconfpy整合各組員的網誌.&lt;/p&gt;</content><category term="w6"></category><category term="網誌編寫"></category></entry></feed>
