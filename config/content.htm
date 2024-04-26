@@ -23,7 +23,8 @@
 <p></p>
 <h1>期中影片</h1>
 <p></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8GchSL6DanU?si=d3RBg7FpAlrh1Zcl" title="YouTube video player" width="560"></iframe></p><h1>整理影片</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8GchSL6DanU?si=d3RBg7FpAlrh1Zcl" title="YouTube video player" width="560"></iframe></p>
+<h1>整理影片</h1>
 <p>組別分工合作把這學期的教學影片上字幕並整理逐字稿</p>
 <p>自評:60</p>
 <p>1.<span>如何設定個人倉儲中的 Pelican 網誌 12:51</span></p>
@@ -39,9 +40,60 @@
 <p>3.如何將 41123130 的個人倉儲設為2a-miding?分組倉儲的子模組 12:11</p>
 <p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/8rfcbftNBig?si=6nhlJD1Sj56hK7qg" title="YouTube video player" width="560"></iframe></p>
 <p><a href="https://nfuedu-my.sharepoint.com/:t:/g/personal/41123143_nfu_edu_tw/EXgKNNz0deZDjDAPxv6aYzYB5IpdU9E3MXHuatLRnzM7aQ?e=37obuF">逐字稿3</a></p>
-<p><span>將各組員倉儲設為分組網站的子模組，優點是比較好整合各組員繪製的零件</span></p><h1>文章翻譯</h1>
+<p><span>將各組員倉儲設為分組網站的子模組，優點是比較好整合各組員繪製的零件</span></p>
+<h1>文章翻譯</h1>
 <p>負責頁數:1-11頁(不是最前面的羅馬數字部分)</p>
-<p><a href="https://nfuedu-my.sharepoint.com/:w:/g/personal/41123143_nfu_edu_tw/EUxyOREdQJBMsB8GqsHf0lwB8X31q-LtYKJsrZavH6R9mg?e=4pNv0m">中英文翻譯</a></p><h1>Replit</h1>
+<p><a href="https://nfuedu-my.sharepoint.com/:w:/g/personal/41123143_nfu_edu_tw/EUxyOREdQJBMsB8GqsHf0lwB8X31q-LtYKJsrZavH6R9mg?e=4pNv0m">中英文翻譯</a></p>
+<h1>Homework</h1>
+<h2>W10</h2>
+<h3>任務一</h3>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 用於讀取文件和處理路徑的庫
+import os
+
+# 2a.txt 文件的路徑
+file_path = "2a.txt"
+
+# 開啟文件並讀取每一行資料
+with open(file_path, 'r') as file:
+    lines = file.readlines()
+
+# 遍歷每一行資料
+for line in lines:
+    # 分割每行資料並得到學號、GitHub 帳號和組別
+    student_number, github_account, group = line.strip().split(',')
+
+    # 生成學員倉庫和網站連結
+    repository_link = f"https://github.com/{github_account}/cd2024"
+    website_link = f"https://{github_account}.github.io/cd2024"
+
+    # 生成 HTML 頁面的內容
+    html_content = f"""
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;學員資訊&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;學員基本資訊&lt;/h1&gt;
+        &lt;p&gt;學號：{student_number}&lt;/p&gt;
+        &lt;p&gt;GitHub 帳號：{github_account}&lt;/p&gt;
+        &lt;p&gt;組別：{group}&lt;/p&gt;
+        &lt;p&gt;倉庫連結：&lt;a href="{repository_link}"&gt;{repository_link}&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;網站連結：&lt;a href="{website_link}"&gt;{website_link}&lt;/a&gt;&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    """
+
+    # 將 HTML 內容寫入文件
+    output_file_name = f"{student_number}_info.html"
+    with open(output_file_name, 'w') as output_file:
+        output_file.write(html_content)
+
+    print(f"已生成 HTML 文件：{output_file_name}")
+
+print("完成")
+</pre>
+<p></p><h3>任務二</h3>
+<p></p><h1>Replit</h1>
 <p><a href="https://replit.com">https://replit.com</a></p>
 <p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
 <p dir="auto">On Replit:</p>

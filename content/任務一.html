@@ -2,6 +2,7 @@
         <head>
         <title>cmsimde_site</title>
         <meta charset="utf-8">
+<meta property="head" content="H3">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900" rel="stylesheet">
         <link rel="stylesheet" href="./../cmsimde/static/chimper/fonts/icomoon/style.css">
@@ -95,6 +96,7 @@ img.add_border {
 </head>
 <body>
 <div class='container'><nav>
+        
     <div class="site-wrap">
 
     <div class="site-mobile-menu">
@@ -140,4 +142,100 @@ img.add_border {
           </div>
 
         </header>
-    </nav><section><h1>SMap</h1><div id="tipue_search_content"></div><ul><li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='期中影片.html'>期中影片</a><li><a href='整理影片.html'>整理影片</a><li><a href='文章翻譯.html'>文章翻譯</a><li><a href='Homework.html'>Homework</a><ul><li><a href='W10.html'>W10</a><ul><li><a href='任務一.html'>任務一</a><li><a href='任務二.html'>任務二</a></li></li></ul></ul><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a></li></ul></section></div></body></html>
+    <div id="tipue_search_content">W10 << <a href='W10.html'>Previous</a> <a href='任務二.html'>Next</a> >> 任務二<br /><h1>任務一</h1>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 用於讀取文件和處理路徑的庫
+import os
+
+# 2a.txt 文件的路徑
+file_path = "2a.txt"
+
+# 開啟文件並讀取每一行資料
+with open(file_path, 'r') as file:
+    lines = file.readlines()
+
+# 遍歷每一行資料
+for line in lines:
+    # 分割每行資料並得到學號、GitHub 帳號和組別
+    student_number, github_account, group = line.strip().split(',')
+
+    # 生成學員倉庫和網站連結
+    repository_link = f"https://github.com/{github_account}/cd2024"
+    website_link = f"https://{github_account}.github.io/cd2024"
+
+    # 生成 HTML 頁面的內容
+    html_content = f"""
+    &lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;學員資訊&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;h1&gt;學員基本資訊&lt;/h1&gt;
+        &lt;p&gt;學號：{student_number}&lt;/p&gt;
+        &lt;p&gt;GitHub 帳號：{github_account}&lt;/p&gt;
+        &lt;p&gt;組別：{group}&lt;/p&gt;
+        &lt;p&gt;倉庫連結：&lt;a href="{repository_link}"&gt;{repository_link}&lt;/a&gt;&lt;/p&gt;
+        &lt;p&gt;網站連結：&lt;a href="{website_link}"&gt;{website_link}&lt;/a&gt;&lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    """
+
+    # 將 HTML 內容寫入文件
+    output_file_name = f"{student_number}_info.html"
+    with open(output_file_name, 'w') as output_file:
+        output_file.write(html_content)
+
+    print(f"已生成 HTML 文件：{output_file_name}")
+
+print("完成")
+</pre>
+<p></p><br />W10 << <a href='W10.html'>Previous</a> <a href='任務二.html'>Next</a> >> 任務二</div>
+
+    <!-- footer -->
+      <div class="container">
+        <div class="row pt-3 mx-auto">
+            <p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" >Colorlib</a>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+            </p>
+        </div>
+      </div>
+    <!-- for footer -->
+
+        </div> <!-- for site wrap -->
+            <!-- <script src="../cmsimde/static/chimper/js/jquery-3.3.1.min.js"></script> -->
+            <script src="../cmsimde/static/chimper/js/jquery-migrate-3.0.1.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery-ui.js"></script>
+            <script src="../cmsimde/static/chimper/js/popper.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/owl.carousel.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.stellar.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.countdown.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/jquery.magnific-popup.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/bootstrap-datepicker.min.js"></script>
+            <script src="../cmsimde/static/chimper/js/aos.js"></script>
+            <!--
+            <script src="../cmsimde/static/chimper/js/typed.js"></script>
+                    <script>
+                    var typed = new Typed('.typed-words', {
+                    strings: ["Web Apps"," WordPress"," Mobile Apps"],
+                    typeSpeed: 80,
+                    backSpeed: 80,
+                    backDelay: 4000,
+                    startDelay: 1000,
+                    loop: true,
+                    showCursor: true
+                    });
+                    </script>
+            -->
+            <script src="../cmsimde/static/chimper/js/main.js"></script>
+        
+<!-- 啟用 LaTeX equations 編輯 -->
+  <!-- <script>
+  MathJax = {
+    tex: {inlineMath: [['$', '$'], ['\(', '\)']]}
+  };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>-->
+    </body></html>
+        
