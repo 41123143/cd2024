@@ -47,53 +47,82 @@
 <h1>Homework</h1>
 <h2>W10</h2>
 <h3>任務一</h3>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false"># 用於讀取文件和處理路徑的庫
-import os
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">from browser import window, ajax, document, html
 
-# 2a.txt 文件的路徑
-file_path = "2a.txt"
+def fetch_csv_data():
+  # CSV 檔案網址
+  url = "https://mdecd2024.github.io/2astud-2asite/downloads/2a.txt"
+  
+  def on_complete(req):
+    if req.status == 200 or req.status == 0:
+      # 讀取 CSV 檔案內容
+      content = req.text
+  
+      # 依照換行符號拆分資料
+      lines = content.split('\n')
+  
+      # 建立空列表儲存資料
+      data = []
+  
+      # 遍歷每一行資料
+      for line in lines:
+        # 忽略空白行
+        if line.strip() == "":
+          continue
+  
+        # 依照逗號拆分資料
+        items = line.split(',')
+  
+        # 將拆分後的資料加入列表
+        data.append(items)
+      
+      # 必須去除 data 的第一列標題資料, 只取序號為 1 之後的資料
+      data = data[1:]
+  
+      # 取得 html 可以插入的標註位置
+      brython_div = document["brython_div1"]
+      course_title = "cd2024"
 
-# 開啟文件並讀取每一行資料
-with open(file_path, 'r') as file:
-    lines = file.readlines()
+      # 逐一處理學員資料
+      index = 0
+      for items in data:
+        index += 1
+        student_id, github_username, group = items
+        
+        if github_username == "":
+          github_username = "000"
+        
+        # 建立網站和倉儲連結，使用正確的模板
+        site_url = f"https://{github_username}.github.io/{course_title}"
+        repo_url = f"https://github.com/{github_username}/{course_title}"
+        group_site_url = f"https://mdecd2024.github.io/2a-midag{group}"
+        group_repo_url = f"https://github.com/mdecd2024/2a-midag{group}"
 
-# 遍歷每一行資料
-for line in lines:
-    # 分割每行資料並得到學號、GitHub 帳號和組別
-    student_number, github_account, group = line.strip().split(',')
+        # 添加學號, 網站, 倉儲連結和序號到 brython_div
+        brython_div &lt;= str(index) + ". " + html.A(student_id, href=site_url)
+        brython_div &lt;= " ("
+        brython_div &lt;= html.A("repo", href=repo_url)
+        brython_div &lt;= ") | " 
+        brython_div &lt;= html.A("Group Site", href=group_site_url)
+        brython_div &lt;= " | "
+        brython_div &lt;= html.A("Group Repo", href=group_repo_url)
+        brython_div &lt;= html.BR()
 
-    # 生成學員倉庫和網站連結
-    repository_link = f"https://github.com/{github_account}/cd2024"
-    website_link = f"https://{github_account}.github.io/cd2024"
-
-    # 生成 HTML 頁面的內容
-    html_content = f"""
-    &lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;學員資訊&lt;/title&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;h1&gt;學員基本資訊&lt;/h1&gt;
-        &lt;p&gt;學號：{student_number}&lt;/p&gt;
-        &lt;p&gt;GitHub 帳號：{github_account}&lt;/p&gt;
-        &lt;p&gt;組別：{group}&lt;/p&gt;
-        &lt;p&gt;倉庫連結：&lt;a href="{repository_link}"&gt;{repository_link}&lt;/a&gt;&lt;/p&gt;
-        &lt;p&gt;網站連結：&lt;a href="{website_link}"&gt;{website_link}&lt;/a&gt;&lt;/p&gt;
-    &lt;/body&gt;
-    &lt;/html&gt;
-    """
-
-    # 將 HTML 內容寫入文件
-    output_file_name = f"{student_number}_info.html"
-    with open(output_file_name, 'w') as output_file:
-        output_file.write(html_content)
-
-    print(f"已生成 HTML 文件：{output_file_name}")
-
-print("完成")
-</pre>
-<p></p><h3>任務二</h3>
-<p></p><h1>Replit</h1>
+    else:
+      print("Error:", req.text)
+  
+  # 發送 AJAX 請求
+  req = ajax.ajax()
+  req.bind('complete', on_complete)
+  req.open('GET', url, True)
+  req.set_header('content-type', 'application/x-www-form-urlencoded')
+  req.send()
+  
+# 呼叫函式讀取 CSV 資料
+fetch_csv_data()</pre>
+<p><br/><br/></p><h3>任務二</h3>
+<p></p>
+<h1>Replit</h1>
 <p><a href="https://replit.com">https://replit.com</a></p>
 <p>利用 init_replit 指令安裝所需 Python 模組<br/><br/>chmod u+x init_replit<br/><br/>./init_replit</p>
 <p dir="auto">On Replit:</p>
