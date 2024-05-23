@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>41123143協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-17T07:54:52+08:00</updated><entry><title>W10課程內容</title><link href="./41123143_w10.html" rel="alternate"></link><published>2024-04-26T11:00:00+08:00</published><updated>2024-05-17T07:54:52+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-04-26:./41123143_w10.html</id><summary type="html">&lt;p&gt;建立倉儲連結、論文摘要、繪圖&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41123143協同產品設計實習</title><link href="./" rel="alternate"></link><link href="./feeds/all.atom.xml" rel="self"></link><id>./</id><updated>2024-05-23T07:25:45+08:00</updated><entry><title>W10課程內容</title><link href="./41123143_w10.html" rel="alternate"></link><published>2024-04-26T11:00:00+08:00</published><updated>2024-05-17T07:54:52+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-04-26:./41123143_w10.html</id><summary type="html">&lt;p&gt;建立倉儲連結、論文摘要、繪圖&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;建立倉儲連結、論文摘要、繪圖&lt;/p&gt;
 
 
@@ -10,7 +10,14 @@
  &lt;a href="https://41123143.github.io/cd2024/content/%E4%BB%BB%E5%8B%99%E4%BA%8C.html"&gt;論文、摘要&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;任務三:
  使用NX錄製繪製零件過程
- &lt;a href="https://www.youtube.com/watch?v=t2cZbCGajLI"&gt;繪製影片&lt;/a&gt;&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>W9課程內容</title><link href="./41123143_w9.html" rel="alternate"></link><published>2024-04-19T11:00:00+08:00</published><updated>2024-04-20T14:28:01+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-04-19:./41123143_w9.html</id><summary type="html">&lt;p&gt;期中考週&lt;/p&gt;
+ &lt;a href="https://www.youtube.com/watch?v=t2cZbCGajLI"&gt;繪製影片&lt;/a&gt;&lt;/p&gt;</content><category term="w10"></category><category term="網誌編寫"></category></entry><entry><title>W11課程內容</title><link href="./41123143_w11.html" rel="alternate"></link><published>2024-04-26T11:00:00+08:00</published><updated>2024-05-23T07:25:45+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-04-26:./41123143_w11.html</id><summary type="html">&lt;p&gt;分支維護、繪圖&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;分支維護、繪圖&lt;/p&gt;
+
+
+&lt;p&gt;1.創建自己的分支更新倉儲內容，最後再合併到main
+&lt;a href="https://github.com/mdecd2024/2a-midag7"&gt;小組倉儲&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mdecd2024/2astud-2asite"&gt;評分倉儲&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;2.繪製NX零件圖&lt;/p&gt;</content><category term="w11"></category><category term="網誌編寫"></category></entry><entry><title>W9課程內容</title><link href="./41123143_w9.html" rel="alternate"></link><published>2024-04-19T11:00:00+08:00</published><updated>2024-04-20T14:28:01+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-04-19:./41123143_w9.html</id><summary type="html">&lt;p&gt;期中考週&lt;/p&gt;
 </summary><content type="html">&lt;p&gt;期中考週&lt;/p&gt;
 
 
