@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41123143協同產品設計實習 - w12</title><link href="./" rel="alternate"></link><link href="./feeds/w12.atom.xml" rel="self"></link><id>./</id><updated>2024-05-23T16:44:45+08:00</updated><entry><title>W12課程內容</title><link href="./41123143_w12.html" rel="alternate"></link><published>2024-05-10T11:00:00+08:00</published><updated>2024-05-23T16:44:45+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-05-10:./41123143_w12.html</id><summary type="html">&lt;p&gt;分支維護、繪圖&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;分支維護、繪圖&lt;/p&gt;
+
+
+&lt;p&gt;1.將鋼球平衡台零組件的繪製分配給組員NXOpen Python 程式，並將所有的零件組裝&lt;/p&gt;
+&lt;p&gt;2.將分組倉儲設為評分網站子模組&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mdecd2024/2a-midag7"&gt;分組倉儲&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://github.com/mdecd2024/2astud-2asite"&gt;2a評分倉儲&lt;/a&gt;&lt;/p&gt;</content><category term="w12"></category><category term="網誌編寫"></category></entry></feed>
