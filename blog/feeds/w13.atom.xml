@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41123143協同產品設計實習 - w13</title><link href="./" rel="alternate"></link><link href="./feeds/w13.atom.xml" rel="self"></link><id>./</id><updated>2024-05-30T14:21:43+08:00</updated><entry><title>W13課程內容</title><link href="./41123143_w13.html" rel="alternate"></link><published>2024-05-17T11:00:00+08:00</published><updated>2024-05-30T14:21:43+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-05-17:./41123143_w13.html</id><summary type="html">&lt;p&gt;補做之前沒做完的事&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;補做之前沒做完的事&lt;/p&gt;
+
+&lt;p&gt;1.將零組件以STL檔導入coppeliasim&lt;/p&gt;
+&lt;p&gt;2.導入球場，執行程式，控制足球機器人./&lt;/p&gt;</content><category term="w13"></category><category term="網誌編寫"></category></entry></feed>
