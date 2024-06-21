@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>41123143協同產品設計實習 - w17</title><link href="./" rel="alternate"></link><link href="./feeds/w17.atom.xml" rel="self"></link><id>./</id><updated>2024-06-21T07:52:18+08:00</updated><entry><title>W17課程內容</title><link href="./41123143_w17.html" rel="alternate"></link><published>2024-06-14T11:00:00+08:00</published><updated>2024-06-21T07:52:18+08:00</updated><author><name>41123143</name></author><id>tag:None,2024-06-14:./41123143_w17.html</id><summary type="html">&lt;p&gt;做w17 項目一、項目二、項目三&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;做w17 項目一、項目二、項目三&lt;/p&gt;
+
+&lt;p&gt;項目一:
+  用 NX1872, 完成可以參與球賽競技的機器人零件與組立件設計, 過程中拍攝零組件繪製過 程，上傳youtube&lt;/p&gt;
+&lt;p&gt;項目二:
+選上列項目一中某一零件組立過程, 以 NXOpen Python 程式完成組立, 過程中請拍攝 Python Journal 程式組立過程，上傳youtube&lt;/p&gt;
+&lt;p&gt;項目三:
+將所完成的機器人球員放入 CoppeliaSim 運動場景中，使移動，並拍攝過程，上傳youtube&lt;/p&gt;</content><category term="w17"></category><category term="網誌編寫"></category></entry></feed>
